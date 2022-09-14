@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network and Security on Not A Shopping Note</title>
+    <link>http://localhost:1313/categories/network-and-security/</link>
+    <description>Recent content in Network and Security on Not A Shopping Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 14 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/network-and-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IoT Security 1 - A Brave New World</title>
+      <link>http://localhost:1313/new-notashoppingnote/iot-security-1/</link>
+      <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/new-notashoppingnote/iot-security-1/</guid>
+      <description>Definition of IoT Based on IEEE, IoT is a network that connects uniquely identifiable “things” to the Internet. The “things” have sensing/actuation and potential programmability capabilities.
+Based on ITU-T Y.2060 A device is a piece of equipment with the mandatory capabilities of communication and the optional capabilities of sensing, actuation, data capture, data storage, and data processing. Thing is an object of the physical world (physical things) or the information world (virtual things), which is capable of being identified and integrated into communication networks.</description>
+    </item>
+    
+  </channel>
+</rss>

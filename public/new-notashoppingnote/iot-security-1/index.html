@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+
+
+<title>IoT Security 1 - A Brave New World - Not A Shopping Note</title>
+
+
+
+<link rel="stylesheet" href="/scss/style.min.6d03e212cc1ce3781740114de93884b9fcdf6e46dc6076ccb066b1f3acdadafc.css">
+</head>
+  <body>
+    <header class="header">
+  <div class="header__title">
+    <a href="http://localhost:1313/">Not A Shopping Note</a>
+  </div>
+  <div class="headerNav">
+    <ul class="headerNav__items">
+      <li>
+        <a href="http://localhost:1313/search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+<div class="container">
+      <main class="main">
+        
+<div class="post">
+  <div class="post__header">
+    
+    <img class="post__image" src="/new-notashoppingnote/iot-security-1/IoTSec.jpg">
+  </div>
+
+  
+  <div class="post__tags">
+    
+      <a class="post__tag" href="http://localhost:1313/tags/iot-security">IoT Security</a>
+    
+  </div>
+  
+
+  <section class="post__content">
+    <h1 id="title">IoT Security 1 - A Brave New World</h1>
+    <div>
+      <article>
+          <h2 id="definition-of-iot">Definition of IoT</h2>
+<p>Based on IEEE, IoT is a network that connects uniquely identifiable “things” to the Internet. The “things” have sensing/actuation and potential programmability capabilities.</p>
+<h3 id="based-on-itu-t-y2060">Based on ITU-T Y.2060</h3>
+<p>A device is a piece of equipment with the mandatory capabilities of communication and the optional capabilities of sensing, actuation, data capture, data storage, and data processing. Thing is an object of the physical world (physical things) or the information world (virtual things), which is capable of being identified and integrated into communication networks.</p>
+<h2 id="the-implementation-of-iot">The Implementation of IoT</h2>
+<p>Today, many industries rely on IoT to implement these technologies:</p>
+<ul>
+<li>Smart Grid to support more efficient, resilient, and more supportive of environmentally responsible living.</li>
+<li>Connected vehicle, leveraging onboard sensors to scan the roadway and make real-time calculations related to driver’s safety. Also enable capability to do vehicle-to-vehicle (V2V) communication capabilities.</li>
+<li>Manufacturing, by connecting myriad sensors and actuators to support manufacturing operation.</li>
+<li>Wearables, things that are strapped or attached to the human body to collect and communicate information.</li>
+<li>Implantables and medical devices, sensor, controller or communication device that is inserted and operated within the human body.</li>
+</ul>
+<h2 id="the-need-of-iot-security-and-safety">The Need of IoT Security and Safety</h2>
+<p>IoT security is different from traditional cybersecurity as it is a product that comes from other engineering disciplines. IoT security includes direct or distributed monitoring and control of the state of physical systems connected to the internet. Security for the IoT has to ensure not only basic information security factors (confidentiality, integrity, non-repudiation), but also the “physical element” of the devices.</p>
+<p>There are four cyber-physical aspects of the IoT face a safety versus security:</p>
+<ul>
+<li>Everyone is responsible for security</li>
+<li>The IoT and CPS expose huge security problems by crossing information computing and the physical world</li>
+<li>Traditional core engineering disciplines more often do not consider security.</li>
+<li>Many security engineers are ignorant of core engineering disciplines, including fault-tolerant safety design.</li>
+</ul>
+<p>Based on a great statement by Dr. Barry Boehm:</p>
+<ul>
+<li>Safety is related about how the system must not harm the world</li>
+<li>Security is related about how the world must not harm the system</li>
+</ul>
+<p>These are examples of threat contained in the IoT</p>
+<ul>
+<li>Attackers can pivot the attack from IoT devices into the network, and even onto other industries.</li>
+<li>Without proper authentication, malicious hackers can tamper thermodynamics sensors to provide falsified information and harm the workers.</li>
+</ul>
+<p>In the absence of a compatible framework for the IoT security, NIST formed CPS Public Working Group represents a cross-industry collaboration of security professionals working to build a framework approach to solve many cyber-physical IoT challenges. This framework provides helpful references to tackle security and physical properties of IoT. It can also help professionals to build system-specific security standards for different implementations.</p>
+<h2 id="the-cps-and-the-iot">The CPS and The IoT</h2>
+<p>Cyber-Physical Systems have some overlapping definitions with the IoT. CPS consists of connected sensors, actuators, with adequate monitoring and controlling systems. However it does not necessarily have to be connected to the internet.</p>
+<p>Even though CPS is technically air-gapped from the internet, it may be connected to the internet one way or another. CPS still needs to be maintained, monitored, and patched. It connects to the internet by using indirect connections, for example supply chain, operating personnel, or out-of-band patch management system.</p>
+<p>CPS is generally designed for safety, security, and functionality. It, however, can be enveloped into IoT simply by connecting it to the internet. So, the intrinsic capability of IoT is its ability to communicate to the internet.</p>
+<h2 id="device-lifecycle">Device Lifecycle</h2>
+<p><img src="attachments/pasted%20image%200.png" alt=""></p>
+<p>The IoT device lifecycle divided into 3 phases</p>
+<ul>
+<li>
+<p>IoT Device Implementation, aspect of IoT device design and development. The organization included in this phase are:</p>
+<ul>
+<li>Original Equipment Manufacturer (OEM) - procure customized hardware and firmware and tailor a device with unique physical characteristics. OEMs also package and distribute products to end operators.</li>
+<li>Board Support Package (BSP) - Typically provides the OEM customized firmware, APIs, and drivers between the hardware and OS.</li>
+<li>Original Design Manufacturers (ODM) - providing OS and hardware sub-assemblies.</li>
+</ul>
+</li>
+<li>
+<p>IoT Service Implementation, aspect to support IoT deployments through enterprise APIs, gateways, and other architectural commodities.</p>
+<ul>
+<li>Cloud Service Provider (CSP) : public cloud that at minimum provided IAAS.</li>
+<li>OEMs : the IoT manufacturers that operate and manage their own infrastructure.</li>
+</ul>
+</li>
+<li>
+<p>IoT Device and Service Deployment, the end of deployment phase of IoT devices in the IoT infrastructure.</p>
+</li>
+</ul>
+<h2 id="hardware-and-operating-system">Hardware and Operating System</h2>
+<p>There are many IoT development boards, such as Arduino and Raspberry Pi, those are popular for prototyping and provide various levels of functionality.  Some IoT devices utilize Real Time Operating System (RTOS) for process and memory management as well as including message and communication services.</p>
+<h2 id="iot-communications">IoT Communications</h2>
+<p>In most of the cases, an IoT device communicates through the gateway to reach the controller or a web service. The example can be as simple as a smartphone, acting as a gateway, colocated with the IoT endpoint and communicating over an RF protocol, such as Bluetooth-LE, ZigBee, or Wi-Fi. Others may be more centrally located in data centres using proprietary gateway IoT protocols, such as Message Queuing Telemetry Transport (MQTT) or Representational State Transfer (REST). A wide array of protocols may be used to enable message transfer and communication.</p>
+<p><img src="attachments/pasted%20image%200%20(1).png" alt=""></p>
+<p>It is worth noting that industry regulations are applicable to IoT devices, such as HIPAA, PCI, SOX, and others.</p>
+<h2 id="messaging-protocols">Messaging Protocols</h2>
+<p>These formats are</p>
+<h3 id="message-queuing-telemetry-transport-mqtt">Message Queuing Telemetry Transport (MQTT)</h3>
+<p>Publish/subscribe model whereby clients subscribe to topics and maintain an always-on TCP connection to broker server. If new messages are sent to the broker, they include a topic with the message, allowing the broker to determine which clients should receive the message.
+<img src="attachments/pasted%20image%200%20(2).png" alt=""></p>
+<h3 id="constrained-application-protocol-coap">Constrained Application Protocol (CoAP)</h3>
+<p>CoAP devices communicate to web servers using specific URI to process commands. This messaging protocol are UDP-based to call HTTP request method using resource-constrained devices,such as WSN.<br>
+<img src="attachments/pasted%20image%200%20(3).png" alt=""></p>
+<h3 id="data-distribution-service-dds">Data Distribution Service (DDS)</h3>
+<p>Just like MQTT, it also uses a publish/subscribe model. DDS allows communications to happen anonymously and automatically, since no relationship between the endpoints are required. QoS mechanisms are built into the protocol. DDS is designed for device-to-device communication and is used in deployment scenarios, such as wind farms, medical imaging systems, and asset-tracking systems.<br>
+<img src="attachments/pasted%20image%200%20(4).png" alt=""></p>
+<h3 id="advanced-message-queuing-protocol-amqp">Advanced Message Queuing Protocol (AMQP)</h3>
+<p>Designed to provide a queuing system in support of server-to-server communications. AMQP allows both publish/subscribe and point-to-point communication models.</p>
+<h3 id="extensible-messaging-and-presence-protocol-xmpp">Extensible Messaging and Presence Protocol (XMPP)</h3>
+<p>Spports the transmission of XML messages over TCP, allowing developers to implement service discovery and service advertisements.</p>
+<h3 id="gateways">Gateways</h3>
+<p>Most of the message specifications above require protocol-specific gateways or other devices to re-encapsulate the communication over another protocol or perform protocol translation. This manipulating protocols can have enormous security implications or introducing new attack surfaces into an enterprise.</p>
+<h2 id="transport-network-data-link-and-physical-protocols">Transport, Network, Data Link and Physical Protocols</h2>
+<h3 id="transport-protocols">Transport Protocols</h3>
+<p>Transmission Control Protocol (TCP) facilitates acknowledgement of TCP segment transmitted across a network. Full TCP/IP stack that can speak HTTP or MQTT over a secure (TLS) connection. However, TCP is frequently unsuitable for use in constrained network environments (high latency or limited bandwidth).</p>
+<p>On the other hand, User Datagram Protocol (UDP) acts as an alternative to TCP. UDP provides a lightweight transport protocol for connectionless communications. Many highly constrained IoT sensor devices support UDP. For the security reason, there is an alternative to TLS design called Datagram TLS (DTLS) intended for products that implement UDP-based transport.</p>
+<h3 id="network-protocols">Network Protocols</h3>
+<p>IPv4 and IPv6 both play a role in communication in IoT infrastructure. IPv6 over Low Power Wireless Personal Area Network (6LoWPAN) supports use of IPv6 within network-constrained environments. It supports lower data rates of internet connectivity. Designers can also take advantage of link encryption offered within IEEE 802.15.4.</p>
+<h3 id="data-link-and-physical-protocols">Data Link and Physical Protocols</h3>
+<ul>
+<li>IEEE 802.15.4 is designed to operate using p2p or star topologies for low-power and low-speed environments. It supports data rates up to 205kb/s. The PHY layer is responsible for managing RF network access, while the MAC layer is responsible for managing transmission and receipt of frames onto the data link.</li>
+<li>ZWave supports unicast, multicast, and broadcast. ZWave operates at 908.42 MHz (NA) and 868.42 MHz (Europe) with data rates of 100kb/s over a range of about 30 metres.</li>
+<li>Bluetooth Low Energy (BLE) designed for enhanced battery life operates in 2.4 GHz frequency range. It also supports high-rate frequency hopping spread spectrum and AES encryption.</li>
+<li>Power Line COmmunication (PLC) - communications that are modulated directly over existing power lines.</li>
+<li>Cellular communications is boosted by moving towards 5G communications allowing new centralised controller functions to be created that support multitudes of geographically dispersed sensors/actuators with limited infrastructure in place.</li>
+</ul>
+
+      </article>
+    </div>
+  </section>
+</div>
+
+      </main><footer class="footer">
+  <span>&copy; 2022 <a href="http://localhost:1313/">Not A Shopping Note</a></span>
+</footer>
+
+    </div>
+  </body>
+</html>
